@@ -60,7 +60,7 @@ definitions:
           type: "array"
           description: >
             "List of records associated with this tunnel."
-          $ref: "#definitions/recordType"
+          $ref: "#/definitions/recordType"
     required:
     - "name"
     - "records"

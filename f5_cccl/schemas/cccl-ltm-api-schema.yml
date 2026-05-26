@@ -149,7 +149,7 @@ definitions:
           Ordered list of actions to perform on successful match.
           The order of the action in the list indicates the name of the action.
         items:
-          $ref: "#definitions/l7RuleActionType"
+          $ref: "#/definitions/l7RuleActionType"
           type: "array"
       conditions:
         description: >
@@ -157,7 +157,7 @@ definitions:
           in the list indicates the name and the order in which the condition
           is evaluated.
         items:
-          $ref: "#definitions/l7ConditionType"
+          $ref: "#/definitions/l7ConditionType"
           type: "array"
       description:
         description: "Descriptive text that describes the rule"
@@ -439,7 +439,7 @@ definitions:
           type: "array"
           description: >
             List of rules associated with this policy.  This can be an empty list
-          $ref: "#definitions/l7RuleType"
+          $ref: "#/definitions/l7RuleType"
     required:
       - "name"
       - "rules"
@@ -597,7 +597,7 @@ definitions:
       members:
         description: "List of pool members"
         items:
-          $ref: "#definitions/poolMemberType"
+          $ref: "#/definitions/poolMemberType"
           type: "array"
       monitors:
         description: >
@@ -731,7 +731,7 @@ definitions:
           description: "List of pool members"
           items:
             type: "array"
-            $ref: "#definitions/poolMemberType"
+            $ref: "#/definitions/poolMemberType"
       tables:
         description: >
           Specifies an array of tables, e.g. L7 policies
@@ -891,7 +891,7 @@ definitions:
           type: "array"
           description: >
             List of records associated with this data group.
-          $ref: "#definitions/internalDataGroupRecordType"
+          $ref: "#/definitions/internalDataGroupRecordType"
     required:
       - "name"
 
